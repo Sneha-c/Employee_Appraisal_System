@@ -1,11 +1,7 @@
 # Employee-Appraisal-System
-A Basic Employee Appraisal system using MEAN stack
-After downloading this file is run
-npm install
+An Employee Appraisal system using angular, express and mongodb.
 
-The code is ready to be used
 Run mongod
-after the db starts waiting for connection, run
-node server.js
+After connection is formed run node server.js
 
-connect to localhost:3000/
+Then connect to localhost:3000/
