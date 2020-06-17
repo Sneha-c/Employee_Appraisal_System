@@ -1,0 +1,21 @@
+<div class="panel panel-default" ng-init="showEmployee()">
+	<div class="panel-heading">
+	  <p class="panel-title"> Employee Appraisal Information</p>
+	</div>
+	<div class="panel-body">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Name: {{ employee.name }}</label>
+		 <label class="form-control">Attendance: {{ employee.attendance }}</label>
+		 <label class="form-control">Reliability: {{ employee.reliability }}</label>
+		 <label class="form-control">Initiative: {{ employee.initiative }}</label>
+		 <label class="form-control">Judgement: {{ employee.judgement }}</label>
+		 <label class="form-control">Cooperation: {{ employee.cooperation }}</label>
+		 <label class="form-control">Email: {{ employee.email }}</label>
+		 <label class="form-control">Average: {{ employee.average }}</label>
+		 <label class="form-control">ID: {{ employee._id }}</label>
+		<a href="#/employees" class="btn btn-outline-primary"> Cancel</a>
+		</div>
+	</form>		
+    <div>
+<div>

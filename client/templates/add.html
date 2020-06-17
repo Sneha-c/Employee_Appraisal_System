@@ -1,0 +1,37 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span> Add Appraisal of Employee</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="addEmployee()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" ng-model="employee.name" required>
+    </div>
+    <div class="form-group">
+      <label for="attendance">Attendance:</label>
+      <input type="number" class="form-control" id="attendance" ng-model="employee.attendance" min="1" max="5" required>
+    </div>
+    <div class="form-group">
+      <label for="reliability">Reliability:</label>
+      <input type="number" class="form-control" id="reliability" ng-model="employee.reliability" min="1" max="5" required>
+    </div>
+    <div class="form-group">
+      <label for="judgement">Judgement: </label>
+      <input type="number" class="form-control" id="judgement" ng-model="employee.judgement" min="1" max="5" required>
+      <div class="form-group">
+      <label for="initiative">Initiative: </label>
+      <input type="number" class="form-control" id="initiative" ng-model="employee.initiative" min="1" max="5" required>
+      <div class="form-group">
+      <label for="cooperation">Cooperation :</label>
+      <input type="number" class="form-control" id="cooperation" ng-model="employee.cooperation" min="1" max="5" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email :</label>
+      <input type="email" class="form-control" id="email" ng-model="employee.email" required>
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-outline-success">Save</button>
+    <a href="#/employees" class="btn btn-default"> Cancel</a>
+</form>		
+    <div>
+<div>

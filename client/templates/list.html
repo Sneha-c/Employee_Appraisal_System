@@ -1,0 +1,71 @@
+<div class="panel panel-default" ng-init="getEmployees()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-list"> </span> Employees List</p>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped table-bordered table-hover">
+			<thead class="thead-dark">
+			<tr>
+			  <th>Name</th>
+			  <th>Average</th>
+			  <th>Email</th>
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="employee in employees">
+			  <td>{{ employee.name }}</td>
+			  <td>{{ employee.average }}</td>
+			  <td>{{ employee.email }}</td>
+			  <td> 
+			    <a href="#/employees/{{employee._id}}/show" class="btn btn-info"> Show  </a>
+			    <a href="#/employees/{{employee._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
+			  	<a onclick="myFunction()" ng-click="deleteEmployee(employee._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> Delete </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    </div>
+</div>
+<script>
+function myFunction() {
+  var txt;
+  var r = confirm("Are you sure you want to delete?");
+  if (r == true) {
+    deleteEmployee(employee._id);
+  } else {
+    txt = "You pressed Cancel!";
+  }
+}
+</script>
+<center><footer>
+		<table border="1" style="padding:30px 30px 30px 30px" class="table-responsive">
+  			<caption>Rating scale</caption>
+			<thead><tr>
+			<th>Range_Min</th>
+			<th>Range_Max</th>
+			<th>Remark</th>
+			</tr></thead>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>Excellent</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>4</td>
+				<td>Outstanding</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>3</td>
+				<td>Need to improve</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>Poor</td>
+			</tr>
+
+		</table>
+</footer></center>
